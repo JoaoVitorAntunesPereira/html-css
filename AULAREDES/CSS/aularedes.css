@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: black;
+}
+
+html{
+    height: 50%;
+    /*background-image: url(wallpaper.jpg);
+    background-attachment: fixed;*/
+}
+.body2{
+    background-color: #f0f0f0;
+
+
+}
+header{
+    top: 0;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 13vh;
+    max-height: 90px;
+    /* min-height: 90px; */
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    border-bottom: 1px solid rgba(27, 27, 27, 0.4) ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    /*background: rgba(255, 255, 255, .06);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);*/
+}
+
+
+
+#menuzinho{
+    display: none;
+}
+
+i:hover{
+    animation: anima .7s 1;
+}
+
+#zap:hover{
+    color: #10c210;
+}
+
+#face:hover{
+    color: blue;
+}
+
+#you:hover{
+    color: red;
+}
+
+#insta:hover{
+    background: -webkit-linear-gradient(purple,#e619a5,red,orange,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes anima{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(25%);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+
+    75%{
+        transform: translateY(15%);
+    }
+    85%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(3%);
+    }
+}
+
+footer span{
+    margin: 1%;
+}
+
+#div1{
+    margin: 35px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#div1 div{
+    text-align: center;
+}
+
+#div1 a{
+    text-decoration: none;
+}
+
+ #div1 span{
+    cursor: pointer;
+    /* color: black; */
+}
+
+#div1 span:hover{
+    transition: .2s;
+    color: #ec6e33;
+    font-size: 120%;
+}
+
+i{
+    font-size: 35px;
+    cursor: pointer;
+    /*color: white;
+    font-family: cursive;
+    text-shadow: 
+        #0ff 0 0 12px,
+        #0ff 0 0 24px,
+        #0ff 0 0 36px;*/
+}
+
+
+
+#div2{
+    margin-top: 30px;
+    float: left;
+    text-align: right;
+}
+
+header picture img{
+    width: 80%;
+    margin: 1%;
+    margin-top: -4%;
+}
+
+#logoif3{
+    display: none;
+    width: 34%;
+    margin-left: 30%;
+}
+
+.limpafloat{
+    clear: both;
+}
+
+.main1{
+    width: 80%;
+    padding-top: 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    grid-template-rows: 1fr;
+    align-content: space-between;
+}
+
+.main1 div{
+    margin: auto;
+    width: 80%;
+    min-width: 250px;
+    height: 500px;
+    background-color: #ffffff;
+    /*background-color: #ffffff26;*/
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.4);
+
+}
+
+#div10{
+    grid-column: 2;
+}
+
+.main1 img{
+    width: 100%;
+    height: 50%;
+    border-radius: 5px 5px 0 0;
+}
+
+.main1 h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 9%;
+    margin-top: 5%;
+}
+
+.main1 p{
+    padding: 0 9%;
+    font-size: 15px;
+    color: #535353f0;
+    line-height: 20px;
+}
+
+.main1 div a picture{
+    height: 180%;
+    max-height: 100%;
+}
+
+.main1 a{
+    text-decoration: none;
+}
+
+.main1 a h2{
+    color: black;
+}
+
+main{
+    font-family: "Poppins",Arial;
+    font-size: 120%;
+    width: 70%;
+    padding-top: 110px;
+    margin: auto;
+    line-height: 160%;
+}
+
+main div:hover{
+    scale: 1.1;
+    transition: 2s;
+    rotate: 360deg;
+}
+.imgmain{
+    width: 50%;
+    float: left;
+}
+
+.p1{
+    margin-left: 51%;
+}
+
+main h1{
+    text-align: center;
+}
+
+main p, h1,h2{
+    margin-top: 20px;
+}
+
+#bridge{
+    float: left;
+    width: 25% ;
+}
+
+
+@media (max-width:1010px){
+    .main1{
+        grid-template-columns: 1fr 1fr;
+    }
+    #barra-cima{
+        height: 60px;
+        transition: .4s;
+    }
+    #div1{
+        margin: 20px 0;
+        transition: .4s;
+    }
+    #div2{
+        margin-top: 15px;
+        transition: .5s;
+    }
+}
+
+@media (max-width:767px){
+    .main1{
+        display: block;
+    }
+    .main1 div{
+        width: 92%;
+        max-width: 350px;
+    }
+}
+
+@media(max-width:785px){
+    header #logoif4{
+        display: none;
+    }
+    header{
+        grid-template-columns: 1% 60% 39%;
+    }
+    #div2{
+        float: left;
+        text-align: right;
+    }
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="imagens2/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/aularedes.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Roteador</title>
+</head>
+<body id="body1">
+    <script src="script.js"></script>
+    <header id="barra-cima">
+        <div id="menuzinho"><i class='bx bx-menu' onclick="clicar()"></i></div>
+            <picture id="picture">
+                <img src="imagens2/logoif4.png" id="logoif4">
+            </picture>
+            <div id="div1">
+                <div><a href="aularedes.html"><span>HOME</span></a></div>
+                <div><a href="sobre.html"><span>SOBRE</span></a></div>
+                <div><span>TRABALHOS</span></div>
+                <div><span>CONTATOS</span></div>
+            </div>
+            <div id="div2">
+                <a href="https://www.facebook.com/ifprbarracao"><i class='bx bxl-facebook-square' id="face"></i></a>
+                <a href="https://www.youtube.com/c/Conex%C3%A3oIFPR"><i class='bx bxl-youtube' id="you"></i></a>
+                <a href="https://www.instagram.com/ifpr.barracao/"><i class='bx bxl-instagram-alt' id="insta"></i></a>
+                <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp' id="zap"></i></a>
+            </div>
+    </header>
+    <main>
+        <img src="imagens2/roteador-nave.jpg" alt="" class="imgmain">
+        <h1>O que é um roteador?</h1>
+        <p>Um roteador é um dispositivo que conecta duas ou mais redes ou sub-redes comutadas por pacotes. Ele tem duas funções principais: gerenciar o tráfego entre essas redes, encaminhando pacotes de dados para os endereços de IP desejados, permitindo que vários dispositivos usem a mesma conexão de internet.</p>
+        <div class="limpafloat"></div>
+        <p>Existem vários tipos de roteadores, mas a maioria dos roteadores transmite dados entre LANs (redes locais) e WANs (redes de área ampla). Uma LAN é um grupo de dispositivos conectados restritos a uma área geográfica específica. Uma LAN normalmente exige um único roteador.</p>
+
+        <p>Uma WAN, pelo contrário, é uma grande rede espalhada por uma vasta área geográfica. Grandes organizações e empresas que operam em vários locais em todo o país, por exemplo, precisarão de LANs separadas para cada local, que depois se conectarão com as outras LANs para formar uma WAN. Como uma WAN é distribuída por uma grande área, muitas vezes ela necessita de vários roteadores e switches*.</p>
+        <h2>Como funciona um roteador?</h2>
+        <p>Pense em um roteador como um controlador de tráfego aéreo e pacotes de dados como aviões enviados para diferentes aeroportos (ou redes). Assim como cada avião tem um destino único e segue uma rota única, cada pacote precisa ser guiado até seu destino da maneira mais eficiente possível. Da mesma forma que um controlador de tráfego aéreo assegura que os aviões cheguem aos seus destinos sem se perder ou sofrer uma grande interrupção no caminho, um roteador ajuda a direcionar os pacotes de dados para seu endereço de IP de destino.</p>
+
+        <p>A fim de direcionar os pacotes de forma eficaz, um roteador utiliza uma tabela de roteamento interno, que é uma lista de caminhos para vários destinos de rede. O roteador lê o cabeçalho de um pacote para determinar para onde ele está sendo enviado, depois consulta a tabela de roteamento para descobrir o caminho mais eficiente para aquele destino. Em seguida, ele encaminha o pacote para a próxima rede do caminho.</p>
+        <h2>Quais são os diferentes tipos de roteadores?</h2>
+        <p>Para conectar uma LAN à internet, um roteador precisa primeiro se comunicar com um modem. As duas principais formas de fazer isso são:</p>
+
+        <p><em>Roteador sem fio</em>: um roteador sem fio usa um cabo Ethernet para se conectar a um modem. Ele distribui dados convertendo pacotes de código binário em sinais de rádio, depois os transmite sem fio usando antenas. Os roteadores sem fio não estabelecem LANs; em vez disso, eles criam WLANs (redes locais sem fio), que conectam vários dispositivos usando comunicação sem fio.</p>
+        <p><em>Roteador com fio</em>: da mesma forma que um roteador sem fio, um roteador com fio também usa um cabo Ethernet para se conectar a um modem. Ele então usa cabos separados para se conectar a um ou mais dispositivos dentro da rede, criar uma LAN e conectar os dispositivos dentro dessa rede à internet.</p>
+        Além dos roteadores sem fio e com fio para LANs pequenas, há muitos tipos especializados de roteadores que se destinam a funções específicas:
+
+        <p><em>Roteador core</em>: ao contrário dos roteadores usados dentro de uma LAN residencial ou em pequenas empresas, um roteador core é usado por grandes corporações e empresas que transmitem um grande volume de pacotes de dados dentro de sua rede. Os roteadores core operam no "núcleo" de uma rede e não se comunicam com redes externas.</p>
+        <p><em>Roteador de borda</em>: enquanto um roteador core gerencia exclusivamente o tráfego de dados dentro de uma rede de grande escala, um roteador de borda se comunica tanto com roteadores core quanto com redes externas. Os roteadores de borda ficam na "borda" de uma rede e usam o BGP (Border Gateway Protocol) para enviar e receber dados de outras LANs e WANs.</p>
+        <p><em>Roteador virtual</em>: um roteador virtual é um aplicativo de software que desempenha a mesma função que um roteador de hardware padrão. Ele pode usar o Protocolo de Redundância de Roteador Virtual (VRRP) para estabelecer roteadores virtuais primários e de backup, caso um deles falhe.</p>
+    </main>
+</body>
+</html>
