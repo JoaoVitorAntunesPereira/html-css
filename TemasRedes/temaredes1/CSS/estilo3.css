@@ -1,0 +1,15 @@
+*{
+    background-color: #52f783;
+}
+
+i.fa-spinner{
+    font-size: 5rem;
+    animation: spinner 2s infinite linear;
+}
+
+@keyframes spinner{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
